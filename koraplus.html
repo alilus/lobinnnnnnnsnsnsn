@@ -1,10 +1,8 @@
 
-    
+
 <html>
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>TNT SPORTS 2</title>
-    
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
@@ -80,58 +78,73 @@
     .topnav .icon {
       display: none;
     }
-                        .button {
-      background-color: #50ff39; /* Green */
-      border: 3px solid Black;
-     
-      text-align: center;
-      text-decoration: none;
-      font-size: 14px;
-      cursor: pointer;
-        font-weight: bold;
-        width: 115px;
-      }
     
+    .codembed {
+                float: left;
+                width: 100%;
+                height: auto;
+            }
+            .commenter {
+                float: left;
+            }
+            .commenter img {
+                width: 35px;
+                height: 35px;
+            }
+            .comment-text-area {
+                float: left;
+                width: 100%;
+                height: auto;
+            }
+    
+            .textinput {
+                float: left;
+                width: 100%;
+                min-height: 30px;
+                outline: none;
+                resize: none;
+                border: 1px solid grey;
+            }
+            .button {
+  background-color: #50ff39; /* Green */
+  border: 3px solid Black;
+ 
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+    font-weight: bold;
+    width: 115px;
+  }
     </style>
     
     </head>
     
     <body>
+     
       <div class="contenedor">
         <div class="topnav" id="myTopnav">
-        <!-- menu -->
+            <a href="index.html" class="active">Inicio</a>
+            <a href="canales.html"> Deportes </a>
+             <a href="note.html"> Canales </a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <center><h2>Foxdeportes en vivo </h2></center>
-    
     <br>
+
+    
         <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
 <br>
 <br>
     <div class="video-container">Loading the player...
-<iframe class="embed-responsive-item" id="iframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" src="foxdeportesclp_embed.html" scrolling="no" title="Reproductor 1" alt="Reproducir"></iframe>
-     </div>
+        
+      <iframe id="iframe" class="embed-responsive-item" allow="encrypted-media" frameborder="0" height="100%" width="100%" allowfullscreen="" scrolling="no" allowtransparency="" src="m3u8player.html?url=aHR0cHM6Ly9zdHJlYW0ubXV4LmNvbS8wMkRUWFBnbkhOdm4wMnZ4NjAxZW41OHdFMmM4QjAwa2dsZVgubTN1OD90b2tlbj1leUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklrMXVibGxIVkZwMFUwRlRhVFZaUTFKT1VEWm9kMHBOZVVjelpIRnhOWG96SW4wLmV5SnpkV0lpT2lJd01rUlVXRkJuYmtoT2RtNHdNblo0TmpBeFpXNDFPSGRGTW1NNFFqQXdhMmRzWlZnaUxDSmxlSEFpT2pFMk56UTJNak13TWpZc0ltRjFaQ0k2SW5ZaWZRLm1OeWdSNlM4ZFVibGlTa0tsX1BONDVIVkI4a2VOa3RGYUZGY3VCX2pENnNhSE9tRXc4SUlQMld6N1lEM1F0X2dNZ2NMSV8wcWJZVnlyMGI3S1VhZnVmaXpBRnZMdzVDV2Q3NUQzUkQxZk1fWk1NaElDdWE0OXZobG9ka1BfNncxRDBSOGNoSHZGMzRVYXd2Ykg0MjhpN0ZnTUpkV0ZNbDdlT053REo5TFJfRXkzQlBhNlZocHQ3RW1ubjRlNlFZcHVjRGdJNHZqcEFNUUh5Nm1RZ0JoZkg5anF2dW5PXzhrMzJwb0hfbU9UY2VDdGhSQUlER3VVT0lkclJmcTRlck9DcEV0clBKT3ZQT3haTHlScHdYSzkwd0lKME42VjdOc2JjQTBDdElBM3lHR2ZJbWtjSnk4enBHMXJXak5Xelk4N0loUUhkU2VQajR2VnU0N2ZudWtwZw==" name="iframe"></iframe>
+    </div>
     <br>
+
     
-<center><input class="button" onclick="mostrarMensaje1()" type="button" value="OP-01" />
-  <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-CL" />
-
-     
-  </center><br/>
-
-<script type="text/javascript">
-  function mostrarMensaje1() {
-document.getElementById("iframe").src = "foxdeportesjw_embed.html"
-
-
-}
-function mostrarMensaje2() {
-document.getElementById("iframe").src = "foxdeportesclp_embed.html"
-}
-</script>
-
+    <center>-</center>
     </div>
     <script>
     function myFunction() {
