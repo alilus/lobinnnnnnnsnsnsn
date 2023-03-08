@@ -7,7 +7,6 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -106,20 +105,22 @@
                     resize: none;
                     border: 1px solid grey;
                 }
-        .button {
-  background-color: #50ff39; /* Green */
-  border: 3px solid Black;
- 
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  cursor: pointer;
-    font-weight: bold;
-    width: 115px;
-  }
+
     
     </style>
-    
+      <script type="text/javascript">
+
+        setInterval(function(){
+          console.log('test');
+      
+                  const iframes = document.getElementsByTagName('iframe');
+
+          for (var i = 0; i < iframes.length; i++) {
+               iframes[i].setAttribute('sandbox', 'allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-scripts allow-top-navigation allow-forms');
+               }
+        },3000);
+             
+            </script>
     </head>
     
     <body >
@@ -134,33 +135,37 @@
       </a>
     </div>
     <br>
-    <center><h2>TIGO SPORTS en vivo </h2></center>
-        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
-<br>
-<br>
-    <div class="video-container">Loading the player...
-     <iframe allowfullscreen="true" scrolling="no"  id= "MiIframe" src="https://www.tutelehd.xyz/online.php?a=4760" width="100%" height="100%" frameborder="0"></iframe>
+    <center><h2> en vivo </h2></center>
+        <div class="video-container">
+   <iframe width="424" height="240" src="https://all.ive.zone/ch19.php" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <script>
+     setInterval(function(){
+          console.log('test');
+      
+                  const iframes = document.getElementsByTagName('iframe');
+
+          for (var i = 0; i < iframes.length; i++) {
+               iframes[i].setAttribute('sandbox', 'allow-same-origin');
+               $('img').remove();
+               $("img").css('display', 'none');
+               $('#0').remove();
+               $('#1').remove();$('#2').remove();$('#3').remove();$('#4').remove();$('#5').remove();$('#6').remove();$('#7').remove();
+               }
+        },1000);
+    
+
+  
+        
+    </script>
+     </iframe>
      </div>
     <br>
- <center><input class="button" onclick="mostrarMensaje1()" type="button" value="OP-01" />
-  <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-02" /> 
-  </center><br/>
-<script type="text/javascript">
-  function mostrarMensaje1() {
-document.getElementById("MiIframe").src = "   https://www.tutelehd.xyz/online.php?a=4760"
-}
-function mostrarMensaje2() {
-document.getElementById("MiIframe").src = "//tucanaldeportivo.com/tigosports.php"
-}
-
-
-</script>
-
+ 
     
     
   
     
- 
+    
     </div>
     <script>
     function myFunction() {
@@ -175,19 +180,5 @@ document.getElementById("MiIframe").src = "//tucanaldeportivo.com/tigosports.php
     <footer>
      
     </footer>
-
-<script>function toggleFullscreen() {
-  let elem = document.querySelector("iframe");
-
-  if (!document.fullscreenElement) {
-    elem.requestFullscreen().catch((err) => {
-      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
-    });
-  } else {
-    document.exitFullscreen();
-  }
-}</script>
-
-  
-
-</body></html>
+    </body>
+    </html>
